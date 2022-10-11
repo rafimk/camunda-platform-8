@@ -106,10 +106,12 @@ The setup includes [MailHog](https://github.com/mailhog/MailHog) as a test SMTP 
 
 You can access emails in MailHog's Web UI at [http://localhost:8075](http://localhost:8075).
 
-# You will need to save the Docker image as a tar file: (Move to cllosed network)
+### You will need to save the Docker image as a tar file: (Move to cllosed network)
 
+```
 docker save -o <path for generated tar file> <image name>
 docker load -i <path to image tar file>
+```
 
 # Camunda Platform 7
 
