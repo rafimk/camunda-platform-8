@@ -109,8 +109,16 @@ You can access emails in MailHog's Web UI at [http://localhost:8075](http://loca
 ### You will need to save the Docker image as a tar file: (Move to cllosed network)
 
 ```
-docker save -o <path for generated tar file> <image name>
-docker load -i <path to image tar file>
+docker save -o camunda-optimize.tar camunda/optimize
+docker save -o camunda-connectors-bundle.tar camunda/connectors-bundle
+docker save -o camunda-operate.tar camunda/operate
+docker save -o camunda-tasklist.tar camunda/tasklist
+docker save -o camunda-identity.tar camunda/identity
+docker save -o camunda-zeebe.tar camunda/zeebe
+docker save -o bitnami-keycloak.tar bitnami/keycloak 
+docker save -o docker.elastic.co-elasticsearch-elasticsearch.tar docker.elastic.co/elasticsearch/elasticsearch
+docker save -o postgres.tar postgres:14.5-alpine
+docker save -o camunda-camunda-bpm-platform.tar camunda/camunda-bpm-platform
 ```
 
 # Camunda Platform 7
